@@ -7,12 +7,14 @@ import { HeaderComponent } from '../components/common/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TeamsComponent } from '@components/teams/teams.component';
 import { RouterModule } from '@angular/router';
+import { ConferenceComponent } from '@components/conference/conference.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    TeamsComponent
+    TeamsComponent,
+    ConferenceComponent
   ],
   imports: [
     BrowserModule,

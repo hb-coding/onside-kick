@@ -1,0 +1,25 @@
+<div>
+    {{conferenceName}}
+</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Team</th>
+            <th scope="col"></th>
+            <th scope="col">Record</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let team of teams; index as i">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>
+                <!-- <img [src]="'https://upload.wikimedia.org/wikipedia/commons/' + country.flag" class="mr-2"
+                    style="width: 20px"> -->
+                {{ team.name }}
+            </td>
+            <td>{{ team.standing | number }}</td>
+            <td>{{ team.record }}</td>
+        </tr>
+    </tbody>
+</table>
