@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import Team from '@components/teams/models/Team';
+import Team from 'src/common/models/Team';
 
 
 @Component({
