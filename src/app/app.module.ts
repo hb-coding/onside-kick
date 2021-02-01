@@ -7,18 +7,22 @@ import { HeaderComponent } from '../components/common/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TeamsComponent } from '@components/teams/teams.component';
 import { RouterModule } from '@angular/router';
-
+import { ConferenceComponent } from '@components/conference/conference.component';
+import { RootStoreModule } from '../root-store';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    TeamsComponent
+    TeamsComponent,
+    ConferenceComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RootStoreModule,
     RouterModule,
-    NgbModule
+    NgbModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
