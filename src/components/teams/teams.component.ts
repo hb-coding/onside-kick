@@ -1,7 +1,86 @@
 import { Component, OnInit } from '@angular/core';
-import Team from '@components/teams/models/Team';
+import Team from '@common/models/Team';
 
-const TEAMS: Team[] = [
+const AFC_WEST: Team[] = [
+  {
+    name: 'Broncos',
+    logo: 'bronco',
+    standing: 4,
+    record: '3-5'
+  },
+  {
+    name: 'Chargers',
+    logo: 'charger',
+    standing: 3,
+    record: '3-5'
+  },
+  {
+    name: 'Chiefs',
+    logo: 'chiefs',
+    standing: 1,
+    record: '3-5'
+  },
+  {
+    name: 'Raiders',
+    logo: 'raider',
+    standing: 2,
+    record: '3-5'
+  }
+];
+
+const AFC_EAST: Team[] = [
+  {
+    name: 'Broncos',
+    logo: 'bronco',
+    standing: 4,
+    record: '3-5'
+  },
+  {
+    name: 'Chargers',
+    logo: 'charger',
+    standing: 3,
+    record: '3-5'
+  },
+  {
+    name: 'Chiefs',
+    logo: 'chiefs',
+    standing: 1,
+    record: '3-5'
+  },
+  {
+    name: 'Raiders',
+    logo: 'raider',
+    standing: 2,
+    record: '3-5'
+  }
+];
+const AFC_NORTH: Team[] = [
+  {
+    name: 'Broncos',
+    logo: 'bronco',
+    standing: 4,
+    record: '3-5'
+  },
+  {
+    name: 'Chargers',
+    logo: 'charger',
+    standing: 3,
+    record: '3-5'
+  },
+  {
+    name: 'Chiefs',
+    logo: 'chiefs',
+    standing: 1,
+    record: '3-5'
+  },
+  {
+    name: 'Raiders',
+    logo: 'raider',
+    standing: 2,
+    record: '3-5'
+  }
+];
+const AFC_SOUTH: Team[] = [
   {
     name: 'Broncos',
     logo: 'bronco',
@@ -33,7 +112,11 @@ const TEAMS: Team[] = [
   styleUrls: ['./teams.component.less']
 })
 export class TeamsComponent implements OnInit {
-teams = TEAMS;
+afcWest = AFC_WEST;
+afcNorth = AFC_NORTH;
+afcSouth = AFC_SOUTH;
+afcEast = AFC_EAST;
+
   constructor() { }
 
   ngOnInit(): void {
